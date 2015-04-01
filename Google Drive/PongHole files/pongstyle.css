@@ -20,17 +20,30 @@ html{
 	margin: 0;
 	
 	}
-	
+
 div { 
-	border: .2em solid grey;
+
 	}
+
+.border1 {
+    border: .2em solid grey;
+    border-radius: .5em;
+    box-shadow: .1em .1em .05em black;
+}
+
+.text1 {
+    font-weight: bold;
+    color: #5656E8;
+    text-shadow: .1em .1em .1em  #1C1CBD;
+    font-family: sans-serif;
+}
 
 .button1
 	{
 	height: 3.5em;
 	width: 3.5em;
-	border-radius: .5em;
-	box-shadow: .1em .1em .05em black;
+
+/*	box-shadow: .1em .1em .05em black; */
 	background-color: #DB0413;
 	padding: 0 0 0 0;
 	margin-right: 0;
@@ -44,7 +57,7 @@ div {
 	left: 0;
 	
 	}
-	
+
 
 #title {
 	display: block;
@@ -53,14 +66,17 @@ div {
 	width: 65%;
 	height: 1.6em;
 	padding-top: 0;
-	border: .1em solid black;
+   border: .1em solid grey;
+    border-radius: .25em;
+    box-shadow: .05em .05em .025em black;
 	text-align: center;
 	font-size:200%;
+
 	background-color: #DB0413;
-	font-weight: bold;
+/*	font-weight: bold;
 	color: #5656E8;
 	text-shadow: .1em .1em .1em  #1C1CBD;
-	font-family: sans-serif;
+	font-family: sans-serif; */
 	line-height: 1.6em;
 	
 	}
@@ -92,14 +108,14 @@ border: none;
 }
 
 .par1	{
-	color: #5656E8;
-	text-shadow: .07em .07em .05em  black; /*#1C1CBD;*/
-	font-weight: bold;
+/*	color: #5656E8; */
+/*	text-shadow: .07em .07em .05em  black; /*#1C1CBD;*/
+/*	font-weight: bold; */
 	}
 	
 #bigbox {
-	border-radius: .5em;
-	box-shadow: .1em .1em .05em black;
+/*	border-radius: .5em;
+	box-shadow: .1em .1em .05em black; */
 	height: 16em;
 	width: 16em;
 	display: block;
@@ -111,7 +127,7 @@ border: none;
 
 #play {
 	display: block;
-	height: 15.5em;
+	height: 14em;
 	width: 14em;
 	border: none;
 	margin: 0 auto;
@@ -122,8 +138,8 @@ border: none;
 	display: inline-block;
 	height: 3.5em;
 	width: 9em;
-	border-radius: .5em;
-	box-shadow: .1em .1em .05em black;
+/*	border-radius: .5em;
+	box-shadow: .1em .1em .05em black; */
 	background-color: #DB0413;
 	padding: .02em;
 	margin-right: 0;
@@ -131,9 +147,9 @@ border: none;
 }
 
 #notifications{
-	display: in-line block;
+	display: inline-block;
 	margin: 1em;
-	margin-right:0em;
+	margin-right:0;
 	margin-left: auto;
 	float: right;
 	}
@@ -161,8 +177,8 @@ border: none;
 	margin: 0 auto;
 	height: 14em;
 	width: 14em;
-	border-radius: .5em;
-	box-shadow: .1em .1em .05em black;
+/*	border-radius: .5em;
+	box-shadow: .1em .1em .05em black; */
 	background-color: #DB0413;
 	padding: 0 0 0 0;
 	margin-top: 1.5em;
@@ -201,11 +217,11 @@ border: none;
 	margin-left: 25%;
 	margin-right: auto;
      width: 7em;
-     height: 5em;
+     height: 7em;
      border: .5em solid #DB0413;
      box-shadow: .5em .5em 1em grey;
      background-color: #5656E8;
-	background-image: url(pong2.jpg);
+	background-image: url(./Resources/pong2.jpg);
 	background-size: 7em 5em;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -217,52 +233,125 @@ border: none;
 	margin-left: 25%;
 	margin-right: auto;
 	width: 7em;
-	height: 5em;
+	height: 7em;
 	border: .5em solid #DB0413;
 	box-shadow: .5em .5em 1em grey;
 	background-color: #5656E8;
 	background-image: url(http://zieglerworld.com/images/cornhole-bags.jpg);
-	background-size: 7em 5em;
+	background-size: 7em 7em;
 	background-position: center;
 	background-repeat: no-repeat;
 	/*background-image: url(pong2.jpg);*/
 }
 
-#onePlay{
+#onePlay {
     margin-left: 25%;
     margin-right: auto;
-	width: 7em;
-	height: 5em;
-	border: .5em solid #DB0413;
-	box-shadow: .5em .5em 1em grey;
-	background-color: #5656E8;
-	background-image: url(https://lh3.googleusercontent.com/-QILYa8CR_2Q/AAAAAAAAAAI/AAAAAAAAAAA/M5Hvpbxp-4g/photo.jpg);
-    background-size: 7em 5em;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url(https://lh3.googleusercontent.com/-QILYa8CR_2Q/AAAAAAAAAAI/AAAAAAAAAAA/M5Hvpbxp-4g/photo.jpg);
 }
 
 #twoPlay{
     margin-left: 25%;
     margin-right: auto;
-    width: 7em;
-    height: 5em;
-    border: .5em solid #DB0413;
-    box-shadow: .5em .5em 1em grey;
-    background-color: #5656E8;
-    background-image: url(twoplayer.png);
-    background-size: 7em 5em;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url(./Resources/twoplayer.png);
 }
 
-#onePlayOpp{
+.diagHeader{
+    height: 2em;
+    padding-top: 0;
+    margin-left: 0;
+    width: 100%;
+    background-color: #DB0413;
+    text-align: center;
+    padding-left: 0;
+    border-bottom-width: .1em;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#diagHeadLarge {
+    height: 4em;
+}
+
+.dialogCont {
+    height: 100%;
+    width: 100%;
+    background-color: #45473b;
+ }
+
+#gameChoicePongDiag{
+    margin-left: 25%;
+    margin-right: auto;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Resources/pong2.jpg);
+}
+
+.middle {
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+    border: none;
+}
+
+#gameChoiceHoleDiag {
+    margin-left: 25%;
+    margin-right: auto;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(http://zieglerworld.com/images/cornhole-bags.jpg);
+}
+
+#nextButton {
+    height: 5em;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: auto;
+    background-color: #DB0413;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Resources/next.ico);
+}
+
+.inputs {
+    background-color: #DB0413;
+}
+
+.diagButton {
+    margin-left: 25%;
+    margin-right: auto;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #DB0413;
 
 }
 
-#twoPlayOpp{
+/*background-image: url(pong2.jpg);*/
 
-}
 /*
 	
 	
@@ -387,4 +476,6 @@ p {
 	font-size: 200%;
 
 	}
-*/	
+*/
+
+
